@@ -1,0 +1,95 @@
+header, footer {
+    padding: 1em;
+    text-align: center;
+    color: White;
+    background-color:lime;
+    border-radius: 25px;
+    list-style: none;
+}
+  body{
+    color: black;
+    background-color: whitesmoke;
+    line-height: 1.5;
+    display: grid;
+}
+main{
+    text-align: center;
+    font-size: 1em;
+    line-height: 2em;
+}
+.one{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.first img{
+    width: 300px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding-right: 100px;
+    border: 10px solid;
+}
+.first-example{
+    text-align: center;
+    color: black;
+    grid-column: 1/2;
+    padding-right: 50px;
+}
+.first-example p{
+    grid-column: 1/2;
+}
+.two{
+   position: relative;
+    text-align: center;
+    grid-column: 2/3;
+}
+.two p{
+    grid-column: 2/3;
+}
+
+.two img{
+    width:250px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+  .three{
+    position: relative;
+    text-align: center;
+    grid-column: 3/4;
+  }
+  .three p{
+      grid-column: 3/4;
+  }
+  
+  .three img{
+    width: 250px;
+    padding-left: 100px;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    }
+    .content{
+        max-width: 1200px;
+        margin: auto;
+        align-items: center;
+      }
+
+@media screen and (min-width: 570px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+    }
+    img{
+      max-width: 400px;
+      width: 80%;      
+    }
+}
+
+@media screen and (min-width: 1200px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1em;
+    }
+}
