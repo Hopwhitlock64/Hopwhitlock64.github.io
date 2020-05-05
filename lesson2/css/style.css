@@ -60,7 +60,6 @@ main{
 }
 footer{
     list-style: none;
-    justify-items: space-between;
   }
 
 @media screen and (min-width: 560px){
