@@ -55,7 +55,7 @@ img{
 nav ul{
   list-style: none; /* removes the bullets! */
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   margin: auto;
   padding: 15px;
   background-color: #284B63;
@@ -68,6 +68,14 @@ nav ul{
 }
 nav a {
   color:white;
+}
+nav a:hover{
+  background-color: #3B5D73;
+  color: white;
+}
+nav a::selection{
+  background-color: #BDC2BF;
+  color: black;
 }
 
 ul{
