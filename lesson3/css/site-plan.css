@@ -69,10 +69,6 @@ nav ul{
 nav a {
   color:white;
 }
-nav a:hover{
-  background-color: #4E6F82;
-  color: white;
-}
 
 ul{
   list-style: none;
@@ -108,8 +104,6 @@ footer{
 a{
   color:#BDC2BF;
 }
-
-
 
 @media screen and (max-width: 40em) {
  /* Grid *********************/
