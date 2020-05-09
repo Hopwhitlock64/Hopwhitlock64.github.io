@@ -34,6 +34,16 @@ img{
 .container img{
   max-width: 100%;
   filter: opacity(40%);
+  position: relative;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+}
+.logo2{
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  background-repeat: no-repeat;
 }
 .banner-text{
   position: absolute;
