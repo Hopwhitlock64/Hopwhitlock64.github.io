@@ -73,10 +73,7 @@ nav a:hover{
   background-color: #4E6F82;
   color: white;
 }
-nav a:selection{
-  background-color: #ACC9D0;
-  color: black;
-}
+
 ul{
   list-style: none;
   word-wrap: break-word;
