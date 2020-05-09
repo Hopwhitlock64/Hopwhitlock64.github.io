@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=PT+Sans&display=swap");
+
+body {
+    max-width: 100%;
+    margin: auto;
+    padding: .5em;
+    display: grid;
+    text-align: center;
+  }
+.content{
+  max-width: 100%;
+  margin: 1em;
+  font-family: 'PT Sans', sans-serif;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
+  display: grid;
+  grid-template-columns: (auto-fit, minmax(6em, 1fr));
+  padding-bottom: .5em;
+ 
+}
+h1, h2, h3, h4{
+  font-family: 'Courgette', cursive;
+}
+img{
+  align-self: center;
+}
+.people img{
+  border: 5px solid #721817;
+  border-radius: 15px;
+}
+.container img{
+  max-width: 100%;
+  filter: opacity(40%);
+}
+.banner-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+nav ul{
+  list-style: none; /* removes the bullets! */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  margin: auto;
+  padding: 15px;
+  background-color: #284B63;
+  height: 25px;
+  overflow: hidden;
+  border-style: 2px solid;
+  border-radius: 5px;
+  font-family: 'Courgette', cursive;
+}
+nav a {
+  color:white;
+}
+ul{
+  list-style: none;
+  word-wrap: break-word;
+}
+.colors h2, h3{
+ color: black;
+} 
+.primary h4{
+ background-color:#284B63;
+ color: white;
+ line-height: 2em;
+}
+.secondary h4{
+  background-color: #D6DAD9;
+  color: black;
+  line-height: 2em;
+}
+.accent1 h4{
+background-color: #721817;
+color: white;
+line-height: 2em;
+}
+.accent2 h4{
+background-color: #4C5154;
+color: white;
+line-height: 2em;
+}
+footer{
+  background-color: #284B63;
+  color: white;
+}
+a{
+  color:#BDC2BF;
+}
+
+
+
+@media screen and (max-width: 40em) {
+ /* Grid *********************/
+ nav ul { 
+  display: grid;
+  /*grid-template-columns: repeat(5, 1fr);*/
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  overflow: hidden;
+}
+
+}
+
+
+
