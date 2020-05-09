@@ -17,11 +17,8 @@ body {
   position: relative;
   text-align: center;
   color: black;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  padding-bottom: .5em;
- 
 }
+
 h1, h2, h3, h4{
   font-family: 'Courgette', cursive;
 }
@@ -53,11 +50,12 @@ img{
   transform: translate(-50%, -50%);
 }
 nav ul{
-  list-style: none; /* removes the bullets! */
+  list-style: none; 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   margin: auto;
   padding: 15px;
+  line-height: 1em;
   background-color: #284B63;
   height: 25px;
   overflow: hidden;
@@ -70,12 +68,8 @@ nav a {
   color:white;
 }
 nav a:hover{
-  background-color: #3B5D73;
-  color: white;
-}
-nav a::selection{
-  background-color: #BDC2BF;
-  color: black;
+  background-color: white;
+  color: #284B63;
 }
 
 ul{
