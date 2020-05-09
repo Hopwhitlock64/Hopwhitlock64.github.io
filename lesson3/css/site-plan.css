@@ -17,7 +17,7 @@ body {
   text-align: center;
   color: black;
   display: grid;
-  grid-template-columns: (auto-fit, minmax(6em, 1fr));
+  grid-template-columns: repeat (auto-fit, minmax(6em, 1fr));
   padding-bottom: .5em;
  
 }
@@ -60,7 +60,8 @@ nav ul{
   background-color: #284B63;
   height: 25px;
   overflow: hidden;
-  border-style: 2px solid;
+  border: 2px;
+  border-style: solid;
   border-radius: 5px;
   font-family: 'Courgette', cursive;
 }
