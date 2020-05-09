@@ -55,7 +55,6 @@ nav ul{
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   margin: auto;
   padding: 15px;
-  line-height: 1em;
   background-color: #284B63;
   height: 25px;
   overflow: hidden;
