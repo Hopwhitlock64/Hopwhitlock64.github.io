@@ -1,0 +1,101 @@
+/*phone, mobile first */
+ul{
+  list-style: none;
+  display: flex;
+  flex-direction:  column;
+  
+}
+li{
+  padding: 15px;
+  display: none;
+}
+li:first-child{
+  display: block;
+}
+.responsive li{
+  display: block;
+  background-color: #D6DAD9;
+}
+nav ul{
+  margin: 0 auto;
+  padding: 15px;
+  height: 25px;
+  border-radius: 15px;
+  background-color: #D6DAD9;
+  font-family: 'Courgette', cursive;
+
+}
+nav a {
+  color:black;
+}
+body {
+  max-width: 100%;
+  margin: 1em;
+  padding: .5em;
+  display: grid;
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+}
+.content{
+max-width: 100%;
+margin: 1em;
+align-content: center;
+
+}
+.container {
+position: relative;
+text-align: center;
+color: black;
+padding-left: 60px;
+}
+
+h1, h2, h3, h4{
+font-family: 'Courgette', cursive;
+text-align: center;
+}
+.logo2{
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  background-repeat: no-repeat;
+}
+header h1, p{
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+  header, footer {
+    text-align: center;
+    color: White;
+    background-color: #284B63;
+    padding: 20px;
+    border-radius: 25px;
+    max-height: 15%;
+}
+footer a{
+  color: white;
+}
+.area p{
+  border: 2px dotted black;
+  padding: 10px;
+  background-color: lightgrey;
+  color: black;
+}
+.area{
+  text-align: center;
+  display: block;
+}
+
+@media screen and (min-width: 520px){
+ ul{
+  flex-direction: row;
+ } 
+ li:first-child{
+     display: none;
+ }
+ li{
+     display: block; 
+ }
+
+}
