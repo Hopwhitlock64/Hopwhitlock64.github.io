@@ -1,0 +1,48 @@
+footer {
+    padding: 1em;
+    text-align: center;
+    color: White;
+    background-color: black;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+body{
+    color: black;
+    background-color:white;
+    line-height: 1.5;
+    text-align: center; 
+}
+h1{
+    color: white;
+    text-align: center;
+    background-color: black;
+    border-bottom: 5px solid lightgray;
+    border-radius: 0px;
+    padding: 10px;
+    margin-bottom: 100px;
+}
+h2{
+    color: red;
+    text-align: center;
+    margin: 25px;
+}
+
+p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 2px right gray;
+    line-height: 1.5em;
+    font-size: 1em;
+    /* Top, right, bottom, left */
+    margin: 15px;
+}
+
+.examples img{
+    border: 10px solid lightgrey;
+    border-radius: 15px;
+    max-width: 700px;
+}
+.examples h2{
+    color: red;
+}
