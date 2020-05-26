@@ -115,7 +115,9 @@ padding-top: 30px;
 footer a{
   color: white;
 }
-
+.article img{
+  align-content: center;
+}
 
 @media screen and (min-width: 600px){
  ul{
@@ -126,6 +128,9 @@ footer a{
  }
  li{
      display: block; 
+ }
+ .article{
+   margin-top: 250px;
  }
  .article img{
    float: right;

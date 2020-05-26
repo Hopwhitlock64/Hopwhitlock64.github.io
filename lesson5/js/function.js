@@ -20,5 +20,6 @@ function DayFunction (){
         let mydate = getDate();
         message =  "Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion." 
      }
-      document.write('.Friday') = message;
+      const bannertxt = document.querySelector('.Friday');
+      bannertxt.textContent = document.write(message);
 }
