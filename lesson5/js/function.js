@@ -17,9 +17,9 @@ dateoutput.textContent = weekname + ', ' + mydate.getDate() + " " + monthname + 
 // pancake banner
 function DayFunction (){
     if (weekname = "Friday"){
-        let mydate = getDate();
         message =  "Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion." 
+        const bannertxt = document.querySelector('.Friday');
+        bannertxt.textContent = document.write(message);
      }
-      const bannertxt = document.querySelector('.Friday');
-      bannertxt.textContent = document.write(message);
+      
 }
