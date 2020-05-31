@@ -15,11 +15,12 @@ const dateoutput = document.querySelector('.currentdate');
 dateoutput.textContent = weekname + ', ' + mydate.getDate() + " " + monthname + " " + mydate.getFullYear();
 
 // pancake banner
-function DayFunction (){
-    if (weekname = "Friday"){
-        message =  "Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion." 
-        const bannertxt = document.querySelector('.Friday');
-        bannertxt.textContent = document.write(message);
+DayFunction();  
+function DayFunction(){
+    if (week_name == 'Friday'){
+        const fridaydiv = document.getElementById('Friday');
+        fridaydiv.style.display = 'block';
+        ConstantSourceNode.body.classList.toggle('movedown');
      }
       
 }

@@ -70,7 +70,7 @@ body {
   font-family: 'PT Sans', sans-serif;
 }
 
-  .Friday{
+  #Friday{
     display: none;
     background-color: gold;
     position: absolute;
@@ -118,6 +118,7 @@ footer a{
 .article img{
   align-content: center;
 }
+
 
 @media screen and (min-width: 600px){
  ul{
