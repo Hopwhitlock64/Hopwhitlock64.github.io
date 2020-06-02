@@ -1,5 +1,12 @@
 
 /*phone, mobile first */
+WebFont.load({
+    google: {
+      families: [
+         'Courgette', 'PT+Sans'
+      ]
+    }
+  });
 ul{
     list-style: none;
     display: flex;
@@ -27,4 +34,5 @@ li:first-child{
    li{
        display: block;
    }
+  
 }
