@@ -107,6 +107,9 @@ text-align: center;
 color: black;
 padding-top: 30px;
 }
+h1{
+  color: white;
+}
 .logo2{
   position: absolute;
   top: 8px;
