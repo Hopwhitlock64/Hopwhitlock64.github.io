@@ -116,7 +116,7 @@ h1{
   left: 16px;
   background-repeat: no-repeat;
 }
-  header, footer, h1 {
+  header, footer{
     text-align: center;
     color: White;
     background-color: #284B63;
