@@ -26,6 +26,15 @@ nav ul{
 nav a {
   color:black;
 }
+picture{
+  position: relative;
+  height: 200px;
+  width: 100%;
+  margin: 10px auto;
+}
+picture img{
+  width: 100%;
+}
 .hero {
   position: relative;
   height: 200px;
@@ -131,7 +140,7 @@ footer a{
      display: block; 
  }
  .article{
-   margin-top: 250px;
+   margin-top: 500px;
  }
  .article img{
    float: right;
