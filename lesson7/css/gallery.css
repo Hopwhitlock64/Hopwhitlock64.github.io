@@ -37,36 +37,33 @@ ul{
     color: black;
     padding-left: 60px;
     }
-    .content{
-        max-width: 100%;
-        margin: 1em;
-        align-content: center;
         
-        }
 body{
-    max-width: 100%;
-    margin: 1em;
+    margin: .5em;
     padding: .5em;
-
     text-align: center;
     font-family: 'PT Sans', sans-serif;
+  
 }
-.Gal{
+figcaption{
+  padding: 15px;
+  display: none;
+}
+
+.Gallery{
     grid-template-columns: 1fr;
     grid-gap: 15px;
+}
+.Gallery figure{
+  margin: 0;
+}
+.Gallry img{
+  margin: 0 auto;
+
 }
 
 h1{
     color: white;
-}
- h3, h4{
-    font-family: 'Courgette', cursive;
-    text-align: center;
-    color: black;
-    padding-top: 30px;
-    }
-h3{
-    display: none;
 }
 .logo2{
     position: absolute;
@@ -86,21 +83,42 @@ footer a{
     color: white;
   }
 
-@media screen and (min-width: 600px){
-    .Gal{
+@media screen and (min-width: 800px){
+    .Gallery{
         display: grid;
-        grid-template-columns: repeat(2, 1fr); 
-    }   
+        grid-template-columns: 1fr 1fr; 
+    } 
+    .Gallery div{
+      margin: 0;
+    }  
+    .Gallery img{
+      display: block;
+    }
     h3{
         display: none;
     }
+    figcaption{
+      display: block;
+    }
 }
-@media screen and (min-width: 850px){
-    .Gal{
+@media screen and (min-width: 1000px){
+    .Gallery{
         display: grid;
-        grid-template-columns: repeat(3, 1fr); 
-        text-align: center;
-    }   
+        grid-template-columns: 1fr 1fr 1fr; 
+        margin: 15px;
+    }  
+    .Gallery img{
+      display: block;
+    }
+    figcaption{
+      display: block;
+    }
+    main{
+      max-width: 850px;
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
+    }
     ul{
      flex-direction: row;
     } 
@@ -111,11 +129,7 @@ footer a{
         display: block; 
     }
     
-    .Gal img:hover{
+    .Gallery img:hover{
         box-shadow: 0 0 20px black;
-    }
-    h3{
-        color: black;
-        display: grid;
     }
 }
