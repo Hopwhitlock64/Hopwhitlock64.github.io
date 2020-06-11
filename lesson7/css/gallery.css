@@ -96,12 +96,13 @@ footer a{
     }  
     .Gallery img{
       display: block;
+   
     }
     h3{
         display: none;
     }
     figcaption{
-      display: block;
+      display: none;
     }
 }
 @media screen and (min-width: 1000px){
@@ -112,6 +113,7 @@ footer a{
     }  
     .Gallery img{
       display: block;
+      max-width: 100%;
     }
     figcaption{
       display: block;
@@ -119,8 +121,6 @@ footer a{
     main{
       max-width: 850px;
       margin: 0 auto;
-      justify-content: center;
-      align-items: center;
     }
     ul{
      flex-direction: row;
