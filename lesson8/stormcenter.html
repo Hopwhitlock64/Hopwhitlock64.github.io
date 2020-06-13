@@ -1,10 +1,93 @@
 <!DOCTYPE html>
+<html lang = "en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Example</title>
-    <link href = "" rel = "stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="author" content="madison whitlock">
+<title>Preston|Hopwhitlock64.github.io</title>
+<meta name="description" content="preston weather page for WDD 230">
+<link href ="../lesson8/css/styles.css" rel = "stylesheet">
+<link rel="icon" href="../lesson6/images/favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <div class = "content">
+        <img class = "logo2" src = "images/icon1.png" alt="weather icon">
+        <header>
+            <p class = "Friday"></p>
+            <div class="container">
+                <div class="banner-text">
+                <h1>Storm Center</h1>
+            </div>
+        </div>
+        </header>
+        <nav>
+            <ul class = "navigation">
+                <li><a class = "ham" href = "#">&#9776; Menu</a></li>
+                <li><a href="">Home</a></li>
+                <li class = ""><a href="">Preston</a></li>
+                <li><a href="">Soda Springs</a></li>
+                <li><a href="">Fish Haven</a></li>
+                <li><a href="active">Storm Center</a></li>
+                <li><a href="">Gallery</a></li>
+                </ul>
+      </nav>
+     <form>
+         <label for = "fname">First Name</label><br>
+         <input type = "text" name = "fname" pattern = "[A-Za-z]{5}" required><br>             
+          <label for = "email">Email</label><br>
+          <input type = "email" name = "email" placeholder = "user@email.org"><br>
+          <label for = "phone">Phone Number</label><br>
+          <input type = "tel" name = "phone" placeholder = "###-###-####"" required><br>
+          <label for = "zip">Zip Code</label><br>
+          <input type = "number" name = "zip" required><br>
+
+          <label for = "stormtype">Storm Type</label><br>
+          <input list = "storm" name = "stormtype" id = "storm-types"><br>
+          <datalist id = "storm">
+            <option value = "Flash Flood"></option>
+            <option value = "Hail"></option>
+            <option value = "Hurricane"></option>
+            <option value = "Thunder Storm"></option>
+            <option value = "Tornado"></option>
+          </datalist>
+          <label class="flexly" for="rating">Rating: &nbsp;&nbsp;&nbsp;
+            <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">5</span>
+            </label>
+    <datalist id="tickmarks"></datalist>
+            <option value="0"></option>
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+            <option value="6"></option>
+            <option value="7"></option>
+            <option value="8"></option>
+            <option value="9"></option>
+            <option value="10"></option>
+    </datalist>
+<label class = "top">Storm Region
+<select name = "select">
+    <option value = "" disabled selected>Select Region &#9662;</option>
+    <option value = "Preston">Preston</option>
+    <option value = "soda_springs">Soda Springs</option>
+    <option value = "fish_haven">Fish Haven</option>
+</select>
+</label>
+<div>User In-Danger Level</div>
+<label class = "sbs"><input type = "radio" name = "in-danger" value = "yes">Yes</label>
+<label class = "sbs"><input type = "radio" name = "in-danger" value = "maybe">Maybe</label>
+<label class = "sbs"><input type = "radio" name = "in-danger" value = "no">No</label>
+<label class = "top">Additional Information or Comments <textarea name = "comments"></textarea></label>
+<fieldset>
+    <input type = "submit" value = "send storm info" class = "submitBtn">
+</fieldset>
+     </form>
+    <footer><p>&copy; |  Madison Whitlock  |  Idaho  |  <a href="https://www.byui.edu/online">BYUI Online Learning</a> | </p><p class = "currentdate"></p>
+        </footer>
+        <script src = "js/function.js"></script>
+    </div>
+
 </body>
 </html>
