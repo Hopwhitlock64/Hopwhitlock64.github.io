@@ -50,7 +50,7 @@
                     <input type = "number" name = "zip" required>
                 </div>
                 <div>
-                    <label for = "stormdate"></label>
+                    <label for = "stormdate">Storm Date</label>
                     <input type = "date" name = "stormDate" id= "stormDate">
                </div>
                 <div>
@@ -65,10 +65,9 @@
                       </datalist> 
                 </div>
                 <div>
-                    <label class="flexly" for="rating">Storm Severity
+                    <label class="flexly" for="rating">Storm Severity</label>
                         <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                                 <span id="ratingvalue">5</span>
-                        </label>
                 <datalist id="tickmarks"></datalist>
                         <option value="0"></option>
                         <option value="1"></option>
@@ -110,6 +109,5 @@
         </footer>
         <script src = "js/function.js"></script>
     </div>
-
 </body>
 </html>
