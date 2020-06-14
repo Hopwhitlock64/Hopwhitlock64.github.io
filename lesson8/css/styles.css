@@ -34,6 +34,14 @@ label {
   display: inline-block;
   min-width: 120px;
 }
+form div {
+  margin-top: 2px;
+  padding: 5px;
+}
+.top{
+  vertical-align: top;
+}
+}
 
 body {
   max-width: 100%;

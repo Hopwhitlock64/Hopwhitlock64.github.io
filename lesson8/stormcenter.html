@@ -7,6 +7,7 @@
 <title>Preston|Hopwhitlock64.github.io</title>
 <meta name="description" content="preston weather page for WDD 230">
 <link href ="../lesson8/css/styles.css" rel = "stylesheet">
+<link href = "css/normalize.css" rel = "stylesheet">
 <link rel="icon" href="../lesson8/images/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -32,57 +33,73 @@
                 </ul>
       </nav>
      <form action = "thanks.html" method = "GET">
-         <fieldset>
+         <div>
             <label for = "fname">First Name</label>
-            <input type = "text" name = "fname" pattern = "[A-Za-z]{5}" required>            
-             <label for = "email">Email</label>
-             <input type = "email" name = "email" placeholder = "user@email.org">
-             <label for = "phone">Phone Number</label>
-             <input type = "tel" name = "phone" placeholder = "###-###-####"" required>
-             <label for = "zip">Zip Code</label>
-             <input type = "number" name = "zip" required>
-         </fieldset>
-         <fieldset>
-            <label for = "stormtype">Storm Type</label><br>
-            <input list = "storm" name = "stormtype" id = "storm-types"><br>
-            <datalist id = "storm">
-              <option value = "Flash Flood"></option>
-              <option value = "Hail"></option>
-              <option value = "Hurricane"></option>
-              <option value = "Thunder Storm"></option>
-              <option value = "Tornado"></option>
-            </datalist>
-            <label class="flexly" for="rating">Rating: &nbsp;&nbsp;&nbsp;
-              <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                      <span id="ratingvalue">5</span>
-              </label>
-      <datalist id="tickmarks"></datalist>
-              <option value="0"></option>
-              <option value="1"></option>
-              <option value="2"></option>
-              <option value="3"></option>
-              <option value="4"></option>
-              <option value="5"></option>
-              <option value="6"></option>
-              <option value="7"></option>
-              <option value="8"></option>
-              <option value="9"></option>
-              <option value="10"></option>
-      </datalist>
-         </fieldset>        
-<label class = "top">Storm Region
-<select name = "select">
-    <option value = "" disabled selected>Select Region &#9662;</option>
-    <option value = "Preston">Preston</option>
-    <option value = "soda_springs">Soda Springs</option>
-    <option value = "fish_haven">Fish Haven</option>
-</select>
-</label>
-<div>User In-Danger Level</div>
-<label class = "sbs"><input type = "radio" name = "in-danger" value = "yes">Yes</label>
-<label class = "sbs"><input type = "radio" name = "in-danger" value = "maybe">Maybe</label>
-<label class = "sbs"><input type = "radio" name = "in-danger" value = "no">No</label>
-<label class = "top">Additional Information or Comments <textarea name = "comments"></textarea></label>
+            <input type = "text" name = "fname" pattern = "[A-Za-z]{5}" required>  
+         </div>
+                  <div>
+                    <label for = "email">Email</label>
+                    <input type = "email" name = "email" placeholder = "user@email.org">
+                  </div>
+                  <div>
+                    <label for = "phone">Phone Number</label>
+                    <input type = "tel" name = "phone" placeholder = "###-###-####"" required>   
+                </div>
+                <div>
+                    <label for = "zip">Zip Code</label>
+                    <input type = "number" name = "zip" required>
+                </div>
+                <div>
+                    <label for = "stormdate"></label>
+                    <input type = "date" name = "stormDate" id= "stormDate">
+               </div>
+                <div>
+                    <label for = "stormtype">Storm Type</label><br>
+                    <input list = "storm" name = "stormtype" id = "storm-types"><br>
+                    <datalist id = "storm">
+                        <option value = "Flash Flood"></option>
+                        <option value = "Hail"></option>
+                        <option value = "Hurricane"></option>
+                        <option value = "Thunder Storm"></option>
+                        <option value = "Tornado"></option>
+                      </datalist> 
+                </div>
+                <div>
+                    <label class="flexly" for="rating">Storm Severity
+                        <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                                <span id="ratingvalue">5</span>
+                        </label>
+                <datalist id="tickmarks"></datalist>
+                        <option value="0"></option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5"></option>
+                        <option value="6"></option>
+                        <option value="7"></option>
+                        <option value="8"></option>
+                        <option value="9"></option>
+                        <option value="10"></option>
+                </datalist>          
+                </div>
+                <div>
+                    <label class = "top">Storm Region
+                        <select name = "select">
+                            <option value = "" disabled selected>Select Region &#9662;</option>
+                            <option value = "Preston">Preston</option>
+                            <option value = "soda_springs">Soda Springs</option>
+                            <option value = "fish_haven">Fish Haven</option>
+                        </select>
+                        </label>
+                </div>        
+<div>
+    <h2>User In-Danger Level</h2>
+    <label class = "sbs"><input type = "radio" name = "in-danger" value = "yes">Yes</label>
+    <label class = "sbs"><input type = "radio" name = "in-danger" value = "maybe">Maybe</label>
+    <label class = "sbs"><input type = "radio" name = "in-danger" value = "no">No</label>
+    <label class = "top">Additional Information or Comments <textarea name = "comments"></textarea></label>
+</div>
 <fieldset>
     <input type = "submit" value = "send storm info" class = "submitBtn">
 </fieldset>
