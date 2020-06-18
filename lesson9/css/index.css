@@ -56,12 +56,17 @@ main{
     margin: .5rem auto;
       border:1px solid #bbb;
     background-color: #eee;
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: 1fr;
+
 }
-.sections{
-        display: flex;
-          flex-direction: row;
+.logo2{
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  background-repeat: no-repeat;
+  max-width: 10px;
+  max-height: 10px;
 }
 img {
      width: 100%;
@@ -72,14 +77,14 @@ img {
     section:nth-child(odd) img {
         grid-column: 2;
 }
-.cards{
+main{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 15px;
     }
 }
 @media screen and (min-width: 850px){
-.cards{
+main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 15px;
