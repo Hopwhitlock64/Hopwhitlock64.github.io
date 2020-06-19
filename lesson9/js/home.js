@@ -12,7 +12,7 @@ fetch(recieveUrl)
       if(towns[i].name == "Preston" || towns[i].name == "Soda Springs" || towns[i].name == "Fish Haven"){
           let card = document.createElement('section');
           let h2 = document.createElement('h2');
-          let h3 = document.createElement('h3');
+          let h4 = document.createElement('h4');
           let par1 = document.createElement('p');
           let par2 = document.createElement('p');
           let par3 = document.createElement('p');
@@ -21,27 +21,27 @@ fetch(recieveUrl)
           
           h2.textContent = towns[i].name;
           card.appendChild(h2);
-          card.classList.add('section');
+          h2.setAttribute("class", "h2name");
           document.querySelector('div.cards').appendChild(card);
   
-          h3.textContent = towns[i].motto;
-          card.appendChild(h3);
-          card.classList.add('section');
+          h4.textContent = towns[i].motto;
+          card.appendChild(h4);
+          h4.setAttribute("class", "h4motto");
           document.querySelector('div.cards').appendChild(card);
   
           par1.textContent = 'Year Founded: ' + towns[i].yearFounded;
           card.appendChild(par1);
-          card.classList.add('section');
+          par1.setAttribute("class", "par1year");
           document.querySelector('div.cards').appendChild(card);
   
           par2.textContent = 'Population: ' + towns[i].currentPopulation;
           card.appendChild(par2);
-          card.classList.add('section');
+          par2.setAttribute("class", "par2pop");
           document.querySelector('div.cards').appendChild(card);
   
           par3.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
           card.appendChild(par3);
-          card.classList.add('section');
+          par3.setAttribute("class", "par3rain")
           document.querySelector('div.cards').appendChild(card);
   
           image.setAttribute("src", "https://Hopwhitlock64.github.io/lesson9/images/" + towns[i].photo);
