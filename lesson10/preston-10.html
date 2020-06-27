@@ -1,30 +1,14 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width">
-<meta name="author" content="madison whitlock">
-<title>Preston|Hopwhitlock64.github.io</title>
-<meta name="description" content="preston weather page for WDD 230">
-<link href ="../lesson5/css/styles.css" rel = "stylesheet">
-<link rel="icon" href="../lesson5/images/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href ="../lesson10/css/styles.css" rel = "stylesheet">
+<link rel="icon" href="../lesson10/images/favicon.ico" type="image/x-icon">
+    <title>Document</title>
 </head>
 <body>
-    <div class = "content">
-        <div id = "Friday">
-            <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion</p>
-        </div>
-        <img class = "logo2" src = "images/icon1.png" alt="weather icon">
-        <header>
-            <p class = "Friday"></p>
-            <div class="container">
-                <div class="banner-text">
-                <h1>The Weather Channel</h1>
-                <p>Where weather becomes predicable</p>
-            </div>
-        </div>
-        </header>
-        <nav>
+    <nav>
             <ul class = "navigation">
                 <li><a class = "ham" href = "#">&#9776; Menu</a></li>
                 <li><a href="">Home</a></li>
@@ -41,16 +25,60 @@
             <img src = "../lesson5/images/town-hero-image2.jpg" alt = "hero image">
             <div class = "summary">
             <h2>Weather Summary</h2>
-                <p>Currently: Sunny</p>
-                <p>High: 76 </p>
-                <p>Wind Chill: 3</p>
-                <p>Humidity: 69%</p>
-                <p>Wind Speed: 5mph </p>
+                <p>Currently: <span id="currently"></span></p>
+                <p>Temp: <span id="current-temp"></span>&deg; F</p>
+                <p>Wind Chill: <span id="chill"></span></p>
+                <p>Humidity: <span id="humidity"></span></p>
+                <p>Wind Speed: <span id="wind"></span> mph</p>
             </div>
         </div>
-        <section class = "five-day">
-            
-        </section>
+        <div class = "five-day">
+            <section class = "day">
+                <p class = "weekday" id = "day0">
+
+                </p>
+                <div class = "forecast">
+                    <p><span id = "imagesrc1"></span><img src = "" alt = "" id = "icon0"</p>
+                    <p><span id = "temp0"></span>&deg;F</p>
+                </div>
+            </section>
+            <section class = "day">
+                <p class = "weekday" id = "day0">
+
+                </p>
+                <div class = "forecast">
+                    <p><span id = "imagesrc2"></span><img src = "" alt = "" id = "icon1"</p>
+                    <p><span id = "temp1"></span>&deg;F</p>
+                </div>
+            </section>
+            <section class = "day">
+                <p class = "weekday" id = "day1">
+
+                </p>
+                <div class = "forecast">
+                    <p><span id = "imagesrc2"></span><img src = "" alt = "" id = "icon2"</p>
+                    <p><span id = "temp2"></span>&deg;F</p>
+                </div>
+            </section>
+            <section class = "day">
+                <p class = "weekday" id = "day2">
+
+                </p>
+                <div class = "forecast">
+                    <p><span id = "imagesrc3"></span><img src = "" alt = "" id = "icon3"</p>
+                    <p><span id = "temp3"></span>&deg;F</p>
+                </div>
+            </section>
+            <section class = "day">
+                <p class = "weekday" id = "day3">
+
+                </p>
+                <div class = "forecast">
+                    <p><span id = "imagesrc4"></span><img src = "" alt = "" id = "icon4"</p>
+                    <p><span id = "temp4"></span>&deg;F</p>
+                </div>
+            </section>
+        </div>
         <section class = "article">
             <h2>Article Title</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -81,11 +109,6 @@
             width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </section> 
        </main>
-          
-    <footer><p>&copy; |  Madison Whitlock  |  Idaho  |  <a href="https://www.byui.edu/online">BYUI Online Learning</a> | </p><p class = "currentdate"></p>
-        </footer>
-        <script src = "js/function.js"></script>
-    </div>
-
+       <script src="js/weatherapi.js"></script>
 </body>
 </html>

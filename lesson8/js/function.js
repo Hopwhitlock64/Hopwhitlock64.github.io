@@ -16,8 +16,8 @@ let month_name = ['January','February', 'March', 'April', 'May','June', 'July', 
 let mydate = new Date();
 let weekname = week_name[mydate.getDay()];
 let monthname  = month_name[mydate.getMonth()];
-const dateoutput = document.querySelector('.currentdate');
-dateoutput.textContent = weekname + ', ' + mydate.getDate() + " " + monthname + " " + mydate.getFullYear();
+const date = document.querySelector('.currentdate');
+date.textContent = weekname + ', ' + mydate.getDate() + " " + monthname + " " + mydate.getFullYear();
 
 // pancake banner
 DayFunction();  
