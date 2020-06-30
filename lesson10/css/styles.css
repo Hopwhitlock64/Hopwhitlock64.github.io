@@ -148,5 +148,14 @@ footer a{
  .article img{
    float: right;
  }
+ .five-day{
+  font-size: 16px;
+  text-align: center;
+  padding: 15px;
+  align-items: center;
+  background-color: #721817;
+  color: white;
+  margin-top: 300px;
+ }
 
 }
