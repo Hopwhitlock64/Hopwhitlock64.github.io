@@ -1,0 +1,138 @@
+/* mobile first */
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction:  column;
+  }
+  li{
+    padding: 15px;
+    display: none;
+  }
+  li:first-child{
+    display: block;
+  }
+  .responsive li{
+    display: block;
+    background-color: #D6DAD9;
+  }
+  nav ul{
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #D6DAD9;
+    font-family: 'Courgette', cursive;
+  
+  }
+  nav a {
+    color:black;
+  }
+  .active{
+    background-color: white;
+    color: black;
+    padding: 15px;
+}
+  .container {
+    position: relative;
+    text-align: center;
+    color: black;
+    padding-left: 60px;
+    }
+        
+body{
+    margin: .5em;
+    padding: .5em;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+  
+}
+figcaption{
+  padding: 15px;
+  display: none;
+}
+
+.Gallery{
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+}
+.Gallery figure{
+  margin: 0;
+}
+.Gallry img{
+  margin: 0 auto;
+
+}
+h2{
+  color: black;
+}
+
+h1{
+    color: white;
+}
+.logo2{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    background-repeat: no-repeat;
+  }
+header, footer{
+    text-align: center;
+    color: White;
+    background-color: #284B63;
+    padding: 30px;
+    border-radius: 25px;
+    max-height: 10%;
+}
+footer a{
+    color: white;
+  }
+
+@media screen and (min-width: 800px){
+    .Gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+    } 
+    .Gallery div{
+      margin: 0;
+    }  
+    .Gallery img{
+      display: block;
+   
+    }
+    h3{
+        display: none;
+    }
+    figcaption{
+      display: none;
+    }
+}
+@media screen and (min-width: 1000px){
+    .Gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        margin: 15px;
+    }  
+    .Gallery img{
+      display: block;
+      max-width: 100%;
+    }
+    figcaption{
+      display: block;
+    }
+    main{
+      max-width: 850px;
+      margin: 0 auto;
+    }
+    ul{
+     flex-direction: row;
+    } 
+    li:first-child{
+        display: none;
+    }
+    li{
+        display: block; 
+    }
+    
+    .Gallery img:hover{
+        box-shadow: 0 0 20px black;
+    }
+}

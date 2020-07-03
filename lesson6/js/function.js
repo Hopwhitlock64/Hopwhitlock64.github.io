@@ -15,12 +15,16 @@ const dateoutput = document.querySelector('.currentdate');
 dateoutput.textContent = weekname + ', ' + mydate.getDate() + " " + monthname + " " + mydate.getFullYear();
 
 // pancake banner
-DayFunction();  
-function DayFunction(){
-    if (week_name == 'Friday'){
-        const fridaydiv = document.getElementById('Friday');
-        fridaydiv.style.display = 'block';
-        ConstantSourceNode.body.classList.toggle('movedown');
-     }
-      
+// Pancake day
+if(weekname == 'Tuesday'){
+    document.getElementById("Friday").style.display = "block";
 }
+// DayFunction();  
+// function DayFunction(){
+//     if (week_name == 'Friday'){
+//         const fridaydiv = document.getElementById('Friday');
+//         fridaydiv.style.display = 'block';
+//         ConstantSourceNode.body.classList.toggle('movedown');
+//      }
+      
+// }
