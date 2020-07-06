@@ -1,6 +1,26 @@
+//Hamburger menu
+const mainnav = document.querySelector('.navigation');
+const hambutton = document.querySelector('.ham');
+
+hambutton.addEventListener('click', 
+() => {mainnav.classList.toggle('responsive')}, false);
+
+// Footer Date
+let week_name = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+let month_name = ['January','February', 'March', 'April', 'May','June', 'July', 'August', 'September', 'October', 'November', 'December'];
+let mydate = new Date();
+let weekname = week_name[mydate.getDay()];
+let monthname  = month_name[mydate.getMonth()];
+const dateoutput = document.querySelector('.currentdate');
+dateoutput.textContent = weekname + ', ' + mydate.getDate() + " " + monthname + " " + mydate.getFullYear();
+
+// Pancake day
+if(weekname == 'Friday'){
+    document.getElementById("Friday").style.display = "block";
+}
 
 /*Summary weather */
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=c6353d1228c4dd7ed9a34d6ec9396b68"
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5607916&appid=c6353d1228c4dd7ed9a34d6ec9396b68"
 
 fetch(apiURL)
   .then((response) => response.json())
@@ -25,7 +45,7 @@ document.getElementById('icon').setAttribute('alt', desc);
 
   // // /* 5 day forecast */
 
-  const apiFive = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=c6353d1228c4dd7ed9a34d6ec9396b68"
+  const apiFive = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&appid=c6353d1228c4dd7ed9a34d6ec9396b68"
   fetch(apiFive)
   .then((response) => response.json())
   .then((jsObject) => {
