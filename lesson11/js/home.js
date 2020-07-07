@@ -45,7 +45,7 @@ fetch(recieveUrl)
           document.querySelector('div.cards').appendChild(card);
   
           image.setAttribute("src", "https://Hopwhitlock64.github.io/lesson9/images/" + towns[i].photo);
-          image.setAttribute("alt", "picture of the town");
+          image.setAttribute("alt", "picture of" + towns[i].name);
           card.appendChild(image);
           card.classList.add('section');
   
