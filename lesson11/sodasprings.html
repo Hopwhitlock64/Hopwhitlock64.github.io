@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href ="../lesson11/css/styles.css" rel = "stylesheet">
-<link rel="icon" href="../lesson11/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../lesson11/images/favicon.ico" type="image/x-icon">
     <title>Document</title>
 </head>
 <body>
@@ -26,7 +26,7 @@
             <ul class = "navigation">
                 <li><a class = "ham" href = "#">&#9776; Menu</a></li>
                 <li><a href="../lesson11/home.html">Home</a></li>
-                <li class = ""><a href="../lesson11/preston.html">Preston</a></li>
+                <li><a href="../lesson11/preston.html">Preston</a></li>
                 <li class = "active"><a href="">Soda Springs</a></li>
                 <li><a href="../lesson11/fishhaven.html">Fish Haven</a></li>
                 <li><a href="../lesson11/stormcenter.html">Storm Center</a></li>
@@ -36,7 +36,7 @@
  
         <h2>Soda Springs</h2>
         <div class = "hero">
-            <img src = "../lesson11/images/sodasprings.jpg" alt = "soda springs banner image">
+            <img src = "../lesson11/images/sodaSprings.jpg" alt = "hero image">
             <div class = "summary">
             <h2>Weather Summary</h2>
                 <p>Currently: <span id="currently"></span></p>
@@ -95,13 +95,14 @@
             </section>
         </div>
         <div class = "event-list">
-            <h2>Upcoming Events</h2>
-            <div class = "events">
-            </div>
+<h2>Upcoming Events</h2>
+<div class = "events">
+</div>
+        </div>
         <section class = "article">
             <h2>Natural Disasters</h2>
             <p>By: Sam Smithton</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum!
@@ -123,7 +124,6 @@
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                </p>
         </section>
-        
         <section class = "contactinfo">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23471.978813137193!2d-111.60628164016107!3d42.66141151672202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8755968bb0047ae5%3A0x9d3970a1a6df8e12!2sSoda%20Springs%2C%20ID%2083276!5e0!3m2!1sen!2sus!4v1594053312234!5m2!1sen!2sus" 
             width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
@@ -133,9 +133,10 @@
             <p>globalweather@google.com</p>
         </div>
     </section>
-    </div>
+        </div>
        <footer><p>&copy; |  Madison Whitlock  |  Idaho  |  <a href="https://www.byui.edu/online">BYUI Online Learning</a> | </p><p class = "currentdate"></p>
        </footer>
+       <script src="js/weatherapi.js"></script>
        <script src="js/sodasprings.js"></script>
        <script src = "js/eventsSoda.js"></script>
 </body>
